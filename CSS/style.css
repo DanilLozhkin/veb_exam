@@ -18,6 +18,7 @@ h1{
     padding-top: 6.8em;
     font-size: 3.2rem;
     font-weight: 700;
+    padding-bottom: 0em;
     color: var(--primary-color);
 }
 h2{
@@ -49,10 +50,19 @@ fieldset{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-right: 30%;
-    margin-left: 30%;
+   
+    width: 40%;
     min-width: 32em;
     
+}
+.div_section_zadaha_2{
+    display: flex;
+    justify-content: center;
+}
+.div_h1_img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 ul{
     list-style: none;
@@ -130,11 +140,15 @@ ul{
     .div_haeder_2_a{
         display: none;
     }
+    .img_h1{
+        display: none;
+    }
 }
 @media screen and (min-width: 1100px){
     .img_a{
         display: none;
     }
+    
 }
 ::selection {
     background-color: var(--septenary-color);
