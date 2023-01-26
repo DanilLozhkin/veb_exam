@@ -8,6 +8,7 @@
     --secondary-color: #010B26;
     --tertiary-color: #0B1C47;
     --hexadecimaly-color:#052a9b;
+    --septenary-color: #ff0000;
     box-sizing: border-box;
 }
 *, ::after, ::before{
@@ -30,11 +31,31 @@ p, select, label, button, legend{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    transition-duration: 1s;
+    border-radius: 5px;
+    width: 180px;
+}
+button:hover {
+    background-color: var(--hexadecimaly-color);
+    transform: scale(1.06);
+  }
 fieldset{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-right: 30%;
+    margin-left: 30%;
+    min-width: 32em;
     
+}
+ul{
+    list-style: none;
 }
 .ul_header{
     margin-top: 5em;
@@ -52,19 +73,23 @@ fieldset{
     margin-bottom: 1em;
     padding-top: 3.5em;
     min-width: 32.5em;
+    transition-duration: 1s;
 }
 .li_ul_header_a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 .primary_header{
     background-color: var(--secondary-color);
+    background-image: url(/img/Rectangle_1.png);
+    background-size: cover;
     padding-top: 2.8em;
     padding-bottom: 3.5em;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    
+   
 }
 .div_header{
     
@@ -88,8 +113,9 @@ fieldset{
     margin-right: 1.5em;
 }
 
-form{
-
+.zadaha_2{
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 .div_radiobox{
     display: flex;
@@ -109,4 +135,13 @@ form{
     .img_a{
         display: none;
     }
+}
+::selection {
+    background-color: var(--septenary-color);
+    color: var(--primary-color);
+}
+::placeholder {
+    color: var(--secondary-color);
+    font-size: 1em;
+    font-weight: 300;
 }
