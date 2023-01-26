@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Ложкин Данил Андреевич 211-324 26.01.2023</title>
 </head>
+
 <body>
     <header class="primary_header">
+
         <div class="div_header">
-            <a href="/"><img src="img/Vector.svg" alt="1" width="135" height="45.34"> </a>
+            <a href="/"><img src="img/Vector.svg" alt="1" width="135" height="45"> </a>
 
             <div class="div_header_2">
                 <a class="div_haeder_2_a" href="/"> главная </a>
@@ -19,8 +22,8 @@
                 <a class="div_haeder_2_a" href="/"> Где купить </a>
                 <a class="div_haeder_2_a" href="/"> Вопрос-ответ </a>
                 <a class="div_haeder_2_a" href="/"> Контакт </a>
-                <a class="img_a" href="/"> 
-                    <img src="img/Бургер.svg" alt="1" width="28" height="18.89">
+                <a class="img_a" href="/">
+                    <img src="img/Бургер.svg" alt="1" width="28" height="19">
                 </a>
             </div>
         </div>
@@ -29,18 +32,52 @@
             <ul class="ul_header">
                 <li class="li_ul_header">
                     <a class="li_ul_header_a">
-                        <img src="img/Frame.svg" alt="4" width="248" height="34"> 
+                        <img src="img/Frame.svg" alt="4" width="248" height="34">
                         <h2>market.yandex.ru</h2>
                     </a>
                 </li>
                 <li class="li_ul_header">
                     <a class="li_ul_header_a">
-                        <img src="img/Mask Group.svg" alt="4" width="202" height="54">
+                        <img src="img/Mask_Group.svg" alt="4" width="202" height="54">
                         <h2>detaliclub.ru</h2>
                     </a>
                 </li>
             </ul>
         </nav>
+
     </header>
+    <main>
+        <section>
+            <div>
+                <fieldset>
+                    <legend>Видео хостинг</legend>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>Название видео:</p>
+                        <label><input name="Название видео" placeholder="кот_видио" type="text" required></label>
+                        <div>
+                            <select name="video" id="p1">
+                                <option value="приватное">приватное</option>
+                                <option value="открытое">открытое</option>
+                            </select>
+                            <label for="p1">тип видео</label>
+                        </div>
+
+                        <div>
+                            <div class="div_radiobox">
+                                <input type="radio" id="contactChoice1" name="contact" value="есть реклама">
+                                <label for="contactChoice1">есть реклама</label>
+                            </div>
+                            <div class="div_radiobox">
+                                <input type="radio" id="contactChoice2" name="contact" value="нет рекламы">
+                                <label for="contactChoice2">нет рекламы</label>
+                            </div>
+                        </div>
+                        <button type="submit"><img src="/img/send.svg" alt="1">отппавить</button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
