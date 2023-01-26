@@ -1,21 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
 :root{
     font-size: 62.5%;
     letter-spacing: 0.2px;
     font-family: 'Montserrat', sans-serif;
-    --primary-color: #252B42;
-    --secondary-color: #737373;
-    --tertiary-color: #FFFFFF;
-    --quaternary-color: #0D5C63;
-    --quinary-color: #FF7B47;
-    --hexadecimaly-color: #BDBDBD;
-    --septenary-color: #FAFAFA;
-    --end-color: #b3b3b3;
-    --end2-color: #ff0000;
+    --primary-color: #FFFFFF;
+    --secondary-color: #010B26;
+    --tertiary-color: #0B1C47;
     box-sizing: border-box;
 }
 *, ::after, ::before{
     box-sizing: inherit;
 }
+h1{
+    padding-top: 6.8em;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.ul_header{
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0em;
+    margin-left: 1em;
+}
+.li_ul_header{
+    border-radius: 0.3em;
+    background-color: var(--tertiary-color);
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding-top: 3.5em;
+    width: 32.5em;
 
+}
+.li_ul_header_a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.primary_header{
+    background-color: var(--secondary-color);
+    padding-top: 2.8em;
+    padding-bottom: -1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.div_header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div_header_2{
+    display: flex;
+    margin-left: 6em;
+    margin-right: 2em;
+
+    position: right;
+}
+.div_haeder_2_a{
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 2rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+@media screen and (max-width: 1100px){
+    .div_haeder_2_a{
+        display: none;
+    }
+}
+@media screen and (min-width: 1100px){
+    .img_a{
+        display: none;
+    }
+}
